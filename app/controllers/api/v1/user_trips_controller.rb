@@ -1,11 +1,11 @@
 class Api::V1::UserTripsController < Api::ApiController
-  respond_to
+  respond_to :json
 
   def create
     user_trip = UserTrip.new(convert_params)
     user_trip.user_id = current_user.id
     if user_trip.save
-      respond_with "".to_json
+      respond_with user_trip
     else
     end
   end
