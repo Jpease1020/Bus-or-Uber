@@ -30,7 +30,7 @@ function getEstimates(orignInput, destinationInput) {
     success: function(response){
       var google_data = response.google_estimate.estimate_info
       var uber_data = response.uber_estimate.ride_estimates
-      var google_duration_value = google_data 
+      var google_duration_value = google_data
       googleEstimate(google_data)
       uberEstimate(uber_data)
       saveGoogleTrip();

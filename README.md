@@ -1,23 +1,19 @@
 ### Bus-or-Uber
 
-### Pitch
+Bus-or-Uber is app that compares the time and money costs between taking an Uber or taking the Denver RDT system to get around Denver.  It’s perfect for college students or anyone who needs to choose between spending more money or time to get to where they want to go.  Just type in a starting and ending destination and we will generate estimated arrival times and costs for either an Uber or a bus ride.    
 
-The app will allow a user to input their current location and endpoint location and receive estimate of how long and how much it would cost to use either public transportation or an uber ride.  It will also aggregate the users usage of each over the course of time so they can see how much money and time they spend on each.  
+[Link to Production App](http://bus-or-uber.herokuapp.com/)
 
-### Problem
+![](http://g.recordit.co/pIc8rrrLqZ.gif)
 
-I am trying to solve the problem many college students and other young adults face when deciding between their budget and their time.  They can now make a decision to take the quicker but more expensive uber and the cheaper but longer transit ride with out guessing as to the amount and ride time of each.
+### Setup
+To set up a local copy of this project, perform the following:
+  1. Clone the repository
+  2. `cd` into the project's directory
+  3. Run `bundle install`
+  4. Run `rails s` to fire up a local server and go to this address in a browser window - http://localhost:3000 .
+  7. To run tests: `rspec`
 
-### Solution
-
-The user will input their current location and desired endpoint.  The app will make an api call out to uber's api and get an estimated time and cost of the trip.  It will make a separate call to the google directions api to get the estimated time of a mass transit ride.  The app will display to the user all the data allowing them to make an informed choice.  
-
-### Target Audience
-
-I see the app being most useable by the lower income population and college students.
-
-### Integrations
-
-* Which APIs will you use?  I will be using the Uber api and google directions api.
-
-* Which OAuth integration are you planning to use?  Uber OAuth
+### Tech
+- This is a Rails app that uses javascript and ajax.
+- The app uses the Uber api and google directions api.
